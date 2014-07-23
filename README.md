@@ -1,4 +1,4 @@
 ScientificReport
 ================
 
-The technical report focus on scientific side
+The technical report focus on scientific aspect
