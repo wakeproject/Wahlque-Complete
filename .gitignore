@@ -1,7 +1,5 @@
 **/.ipynb_checkpoints/*
 
-bin/
-include/
-lib/
+.py/
 .Python
 
