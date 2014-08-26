@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import os
+import virtualenv as venv
 
 """
 Colorful output
@@ -54,6 +56,17 @@ if cur_version < req_version:
 
 """
 Check virtual enviroment
+"""
+
+if not os.path.exists(".py"):
+    print(sys.argv)
+    argv = ['virtualenv', '.py']
+    sys.argv = argv
+    print(sys.argv)
+    venv.main()
+
+"""
+Activate virtual enviroment
 """
 
 
