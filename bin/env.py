@@ -52,7 +52,7 @@ cur_version = sys.version_info
 
 if cur_version < req_version:
     err("Your Python interpreter is too old. Please consider upgrading.")
-    sys.exit(0)
+    sys.exit(-1)
 
 """
 Check virtual enviroment
