@@ -9,15 +9,11 @@ Requirements
 The standard Python environment:
 
 * Python 3.4
-* iPython
-* virtualenv
 
 on Mac:
 
 ```bash
 brew install python3
-sudo pip3 install ipython
-sudo pip3 install virtualenv
 ```
 
 on Linux(Debian):
@@ -26,12 +22,10 @@ on Linux(Debian):
 sudo add-apt-repository ppa:fkrull/deadsnakes
 sudo apt-get update
 sudo apt-get install python3.4
-sudo pip3 install ipython
-sudo pip3 install virtualenv
 ```
 
 on Windows, we suggest you install cygwin first,
-and then install python3.4, ipython and virtualenv under cygwin.
+and then install python3.4 under cygwin.
 
 How to start
 -------------
