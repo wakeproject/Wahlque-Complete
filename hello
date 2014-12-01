@@ -14,13 +14,13 @@ if [[ $PYV == 2.7 ]]
 then
     alias PY=python3;
     alias PIP=pip3;
-    alias NTB=ipython notebook;
+    alias NTB="ipython notebook";
 fi
 if [[ $PYV == 3* ]]
 then
     alias PY=python;
     alias PIP=pip;
-    alias NTB=ipython notebook;
+    alias NTB="ipython notebook";
 fi
 if (PY -V); then
     echo -e "${CLR_YLW}Pyhton version checked......${CLR_NOR}${CLR_GRN}OK${CLR_NOR}"
@@ -53,8 +53,20 @@ if (PY bin/env.py); then
     PIP install scipy==0.14.0
     echo -e "${CLR_YLW}Installing scipy......${CLR_NOR}${CLR_GRN}OK${CLR_NOR}"
 
+    echo -e "${CLR_YLW}Installing pyzmq......${CLR_NOR}"
+    PIP install pyzmq==14.4.1
+    echo -e "${CLR_YLW}Installing pyzmq......${CLR_NOR}${CLR_GRN}OK${CLR_NOR}"
+
+    echo -e "${CLR_YLW}Installing jinja2......${CLR_NOR}"
+    PIP install jinja2==2.7.3
+    echo -e "${CLR_YLW}Installing jinja2......${CLR_NOR}${CLR_GRN}OK${CLR_NOR}"
+
+    echo -e "${CLR_YLW}Installing tornado......${CLR_NOR}"
+    PIP install tornado==4.0.2
+    echo -e "${CLR_YLW}Installing tornado......${CLR_NOR}${CLR_GRN}OK${CLR_NOR}"
+
     echo -e "${CLR_YLW}Installing ipython......${CLR_NOR}"
-    PIP install ipython==2.3.0
+    PIP install ipython==2.3.1
     echo -e "${CLR_YLW}Installing ipython......${CLR_NOR}${CLR_GRN}OK${CLR_NOR}"
 
     echo -e "${CLR_YLW}Installing dependencies......${CLR_NOR}"

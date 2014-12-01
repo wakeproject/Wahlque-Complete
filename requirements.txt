@@ -1,7 +1,5 @@
-numpy==1.8.2
-plotly==1.2.7
-requests==2.3.0
-scipy==0.14.0
-six==1.7.3
+plotly==1.4.7
+requests==2.4.3
+six==1.8.0
 -e git+https://github.com/Wahlque/pywq.git@master#egg=pywq
 
