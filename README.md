@@ -1,7 +1,7 @@
 Wahlque Complete
 =================
 
-The complete book of Wahlque, a citizen science experiement.
+The complete book of Wahlque, a citizen science experiment.
 
 Requirements
 ------------
