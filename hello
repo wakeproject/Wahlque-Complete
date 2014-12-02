@@ -8,7 +8,7 @@ CLR_YLW="\x1b[33m" # YELLOW text
 
 export WQ_HOME=`pwd`
 
-echo -e "${CLR_YLW}Checking Pyhton version......${CLR_NOR}"
+echo -e "${CLR_YLW}Checking Python version......${CLR_NOR}"
 PYV=`python -c "import sys;t='{v[0]}.{v[1]}'.format(v=list(sys.version_info[:2]));sys.stdout.write(t)";`
 if [[ $PYV == 2.7 ]]
 then
@@ -23,13 +23,13 @@ then
     alias NTB="ipython notebook";
 fi
 if (PY -V); then
-    echo -e "${CLR_YLW}Pyhton version checked......${CLR_NOR}${CLR_GRN}OK${CLR_NOR}"
+    echo -e "${CLR_YLW}Python version checked......${CLR_NOR}${CLR_GRN}OK${CLR_NOR}"
 else
-    echo -e "${CLR_YLW}Pyhton version checked......${CLR_NOR}${CLR_RED}Failed${CLR_NOR}"
+    echo -e "${CLR_YLW}Python version checked......${CLR_NOR}${CLR_RED}Failed${CLR_NOR}"
     exit -1
 fi
 
-echo -e "${CLR_YLW}Setting Pyhton path to user local......${CLR_NOR}${CLR_GRN}Done${CLR_NOR}"
+echo -e "${CLR_YLW}Setting Python path to user local......${CLR_NOR}${CLR_GRN}Done${CLR_NOR}"
 export PYTHONPATH=$WQ_HOME/.py/lib/python$PYV/site-packages/:$WQ_HOME/src:$WQ_HOME/scripts
 
 if (PY -c "import virtualenv as venv"); then
