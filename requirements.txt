@@ -1,6 +1,6 @@
-mpld3==0.2
-matplotlib==1.4.3 
-requests==2.4.3
-six==1.8.0
+mpld3
+matplotlib
+requests
+six
 -e git+https://github.com/Wahlque/pywq.git@master#egg=pywq
 
